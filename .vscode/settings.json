@@ -1,0 +1,6 @@
+{
+  "editor.fontFamily": "'Monaco'",
+  "editor.fontSize": 17,
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnSave": true
+}

@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.container > * {
+  min-width: 25rem;
+  max-width: 40rem;
+}
+.image {
+  border-radius: 2rem;
+  flex: 1 0;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  border-radius: 2rem;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.favorite {
+  color: rgb(255, 0, 0);
+  font-size: 2.5rem;
+}
+
+.favorite.not {
+  color: rgb(182, 182, 182);
+}
+
+.origin {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+.origin > span {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0.5rem 0 0;
+  border-radius: 2rem;
+  background-color: rgb(202, 218, 231);
+}
+.cooktime {
+  margin-top: 1rem;
+}
+
+.cooktime span {
+  padding: 0.6rem 2rem 0.6rem 0;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+}
+.price {
+  font-size: 1.8rem;
+  margin: 1rem 1rem 1rem 0;
+  color: green;
+  font-weight: 400;
+}
+
+.price::before {
+  content: "Price: ";
+  color: rgb(129, 129, 129);
+}
+
+.container button {
+  color: white;
+  background-color: red;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  padding: 1rem;
+}
+
+.container button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
