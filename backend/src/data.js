@@ -63,3 +63,22 @@ export const sample_tags = [
   { name: "Lunch", count: 3 },
   { name: "Fastfood", count: 1 },
 ];
+
+export const sample_users = [
+  {
+    id: 1,
+    name: "mtu HALF",
+    email: "mtuhalf@leats.com",
+    password: "87654321",
+    address: "Msa",
+    isAdmin: false,
+  },
+  {
+    id: 2,
+    name: "localhost",
+    email: "lhost@leats.com",
+    password: "admin",
+    address: "Msa",
+    isAdmin: true,
+  },
+];
