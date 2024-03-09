@@ -4,7 +4,7 @@ import foodRouter from "./routers/food.router.js";
 import userRouter from "./routers/user.router.js";
 
 const app = express();
-qpp.use(express.json());
+app.use(express.json());
 app.use(
   cors({
     credentials: true,
