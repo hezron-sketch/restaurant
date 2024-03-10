@@ -15,7 +15,7 @@ export default function LoginPage() {
   } = useForm();
 
   const navigate = useNavigate();
-  const { user, login } = useAuth;
+  const { user, login } = useAuth();
   const [params] = useSearchParams();
   const returnUrl = params.get("returnUrl");
 
@@ -30,7 +30,7 @@ export default function LoginPage() {
   return (
     <div className={classes.container}>
       <div className={classes.details}>
-        <Title title="Login" />
+        <Title title="Login | Register" />
         <form onSubmit={handleSubmit(submit)} noValidate>
           <Input
             type="email"
