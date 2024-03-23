@@ -12,7 +12,7 @@ export default function Thumbnails({ foods }) {
           <Link to={`/food/${food.id}`}>
             <img
               className={classes.image}
-              src={`/foods/${food.imageUrl}`}
+              src={`${food.imageUrl}`}
               alt={food.name}
             />
 
@@ -43,6 +43,7 @@ export default function Thumbnails({ foods }) {
                 <Price price={food.price} />
               </div>
             </div>
+            {/* <button className={classes.btn}></button> */}
           </Link>
         </li>
       ))}

@@ -1,15 +1,14 @@
 .header {
   background: rgb(212, 212, 212);
   padding: 0;
-  border-bottom: 1px solid red;
 }
 
 .header a {
-  color: red;
+  color: rgb(104, 104, 104);
 }
 
 .header a:hover {
-  background: red;
+  background: rgba(179, 179, 179, 0.616);
   color: white;
 }
 
@@ -44,6 +43,7 @@
   position: absolute;
   z-index: 1;
   background-color: rgb(224, 224, 224);
+  border-radius: 0 0 0.5rem 0.5rem;
   display: none;
 }
 
@@ -57,9 +57,9 @@
 }
 
 .cart_count {
-  background-color: rgb(255, 94, 94);
+  background-color: rgb(150, 150, 150);
   color: white;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 50%;
   font-size: 0.9rem;
 }

@@ -6,14 +6,13 @@
 }
 
 .container input {
-  border-radius: 5rem 0 0 5rem;
+  border-radius: 1rem 0 0 1rem;
   border: none;
   height: 2.5rem;
   width: 15rem;
   background-color: rgb(230, 230, 230);
   padding: 1rem;
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1rem;
   outline: none;
 }
 
@@ -22,10 +21,10 @@
   height: 2.5rem;
   width: 5rem;
   font-size: 1.1rem;
-  border-radius: 0 5rem 5rem 0;
+  border-radius: 0 1rem 1rem 0;
   border: none;
-  background-color: rgb(255, 95, 95);
-  font-weight: bolder;
+  background-color: rgb(102, 102, 102);
+  font-weight: 600;
   opacity: 0.8;
   outline: none;
 }

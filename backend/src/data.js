@@ -26,7 +26,7 @@ export const sample_foods = [
     name: "Fries",
     cookTime: "30-40",
     price: 150,
-    favorite: true,
+    favorite: false,
     origins: ["UAE", "Kenya"],
     stars: 3.5,
     imageUrl: "fries.jpg",

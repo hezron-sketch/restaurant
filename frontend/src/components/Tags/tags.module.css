@@ -4,10 +4,10 @@
 }
 
 .container a {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(158, 216, 143);
   padding: 0.3rem 1rem;
   margin: 0.2rem 0.15rem;
   border-radius: 5rem;
-  font-weight: 400;
-  color: rgb(75, 75, 255);
+  font-weight: 600;
+  color: rgb(100, 100, 100);
 }

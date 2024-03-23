@@ -2,5 +2,9 @@
   "editor.fontFamily": "'Monaco'",
   "editor.fontSize": 17,
   "git.ignoreLimitWarning": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.defaultColorDecorators": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "window.density.editorTabHeight": "default",
+  "workbench.layoutControl.enabled": true
 }

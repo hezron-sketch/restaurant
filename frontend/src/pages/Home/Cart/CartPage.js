@@ -11,19 +11,16 @@ export default function CartPage() {
 
   return (
     <>
-      <Title title="Cart Page" margin="1.5rem 0 0 2.5rem" />
+      <Title title="Cart" margin="1.5rem 0 0 2.5rem" />
       {cart.items.length === 0 ? (
-        <NotFound message="Cart Page is Empty!" />
+        <NotFound message={"Empty Cart"} />
       ) : (
         <div className={classes.container}>
           <ul className={classes.list}>
             {cart.items.map((item) => (
               <li key={item.food.id}>
                 <div>
-                  <img
-                    src={`/foods/${item.food.imageUrl}`}
-                    alt={item.food.name}
-                  />
+                  <img src={`${item.food.imageUrl}`} alt={item.food.name} />
                 </div>
                 <div>
                   <Link to={`/food/${item.food.id}`}>{item.food.name}</Link>
