@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
 
-export default FoodSchema = new Schema(
+export const FoodSchema = new Schema(
   {
     name: { type: String, required: true },
     price: { type: Number, required: true },
