@@ -1,20 +1,35 @@
-import React from "react";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../../components/Input/Input";
 import Title from "../../components/Title/Title";
 import classes from "./registerPage.module.css";
 import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
 
-export default function Register() {
+export default function RegisterPage() {
+  const auth = useAuth();
+  const { user } = auth;
+  const navigate = useNavigate();
+  const [params] = useSearchParams();
+  const returnUrl = params.get("returnUrl");
+
+  useEffect(() => {
+    if (!user) return;
+    returnUrl ? navigate(returnUrl) : navigate("/");
+  }, [user]);
+
   const {
     handleSubmit,
     register,
     getValues,
     formState: { errors },
-  } = useForm;
+  } = useForm();
 
-  const submit = async (data) => {};
+  const submit = async (data) => {
+    await auth.register(data);
+  };
 
   return (
     <div className={classes.container}>
@@ -56,7 +71,7 @@ export default function Register() {
             {...register("confirmPassword", {
               required: true,
               validate: (value) =>
-                value !== getValues("passwword")
+                value !== getValues("password")
                   ? "Passwords do not matcch"
                   : true,
             })}
@@ -71,6 +86,12 @@ export default function Register() {
           />
 
           <Button type="submit" text="Register" />
+          <div className={classes.login}>
+            Already have an account? &nbsp;
+            <Link to={`/login${returnUrl ? "?returnUrl=" + returnUrl : ""}`}>
+              Login
+            </Link>
+          </div>
         </form>
       </div>
     </div>
