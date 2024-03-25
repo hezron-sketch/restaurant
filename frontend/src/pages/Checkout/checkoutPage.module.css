@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 6rem 2rem;
+  margin-top: 1rem;
+}
+
+.ceonten {
+  width: 35rem;
+  margin: 0 3rem 0 0;
+}
+
+.content,
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  width: 100%;
+}
+
+.buttons_cont {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 2rem;
+  width: 35rem;
+}
