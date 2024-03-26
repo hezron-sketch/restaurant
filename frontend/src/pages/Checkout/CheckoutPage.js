@@ -10,6 +10,9 @@ import classes from "./checkoutPage.module.css";
 import Title from "../../components/Title/Title";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
+import OrderItemsList from "../../components/OrderItemsList/OrderItemsList";
+import Map from "../../components/Map/Map";
+import { latLng } from "leaflet";
 
 export default function CheckoutPage() {
   const { cart } = useCart();
@@ -51,9 +54,18 @@ export default function CheckoutPage() {
               error={errors.address}
             />
           </div>
+          <OrderItemsList order={order} />
         </div>
+
         <div>
           <Title title="Choose Your Location" fontSize="2rem" />
+          <Map
+            location={order.addressLatLng}
+            onChange={(latLng) => {
+              console.log(latLng);
+              setOrder({ ...order, addressLatLng: latLng });
+            }}
+          />
         </div>
         <div className={classes.buttons_cont}>
           <div className={classes.buttons}>

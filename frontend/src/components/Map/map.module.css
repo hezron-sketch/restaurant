@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  height: 22rem;
+  width: 35rem;
+  text-align: center;
+}
+
+.map {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 1rem;
+}
+
+.find_location {
+  position: absolute;
+  margin: auto;
+  width: 12rem;
+  min-height: 2.5rem;
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.507);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  border-radius: 0.2rem 0.2rem 1rem 1rem;
+  border: none;
+  border-top: 1px;
+}
+.find_location:hover {
+  background-color: rgba(255, 255, 255, 0.842);
+}
