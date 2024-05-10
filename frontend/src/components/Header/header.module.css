@@ -1,15 +1,15 @@
 .header {
-  background: rgb(212, 212, 212);
+  background: linear-gradient(rgb(250, 211, 103), rgb(249, 206, 86));
   padding: 0;
 }
 
 .header a {
-  color: rgb(104, 104, 104);
+  color: rgb(255, 64, 0);
 }
 
 .header a:hover {
-  background: rgba(179, 179, 179, 0.616);
-  color: white;
+  background: rgb(255, 123, 0);
+  color: rgb(255, 232, 210);
 }
 
 .container {
@@ -19,9 +19,9 @@
 }
 
 .logo {
-  font-weight: bolder;
-  padding: 1.1rem;
-  font-size: large;
+  font-weight: 900;
+  padding: 1rem;
+  font-size: x-large;
 }
 
 .header ul {
@@ -57,7 +57,7 @@
 }
 
 .cart_count {
-  background-color: rgb(150, 150, 150);
+  background-color: rgb(255, 98, 0);
   color: white;
   padding: 0.2rem 0.6rem;
   border-radius: 50%;

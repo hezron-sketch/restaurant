@@ -4,10 +4,13 @@
 }
 
 .container a {
-  background-color: rgb(158, 216, 143);
+  background: linear-gradient(
+    rgba(255, 213, 136, 0.386),
+    rgba(239, 201, 135, 0.632)
+  );
   padding: 0.3rem 1rem;
   margin: 0.2rem 0.15rem;
   border-radius: 5rem;
   font-weight: 600;
-  color: rgb(100, 100, 100);
+  color: rgb(255, 123, 0);
 }
