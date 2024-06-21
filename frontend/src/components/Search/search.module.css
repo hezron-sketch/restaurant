@@ -17,16 +17,13 @@
 }
 
 .container button {
-  color: rgb(235, 99, 2);
+  color: rgb(255, 64, 0);
   height: 2.5rem;
   width: 5rem;
   font-size: 1.1rem;
   border-radius: 0 2rem 2rem 0;
   border: none;
-  background: linear-gradient(
-    rgba(255, 213, 136, 0.708),
-    rgba(214, 239, 135, 0.632)
-  );
+  background: rgb(255, 182, 113);
   font-weight: 600;
   opacity: 0.8;
   outline: none;
