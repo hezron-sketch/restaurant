@@ -45,6 +45,7 @@ export default function RegisterPage() {
             })}
             error={errors.name}
           />
+          
           <Input
             type="email"
             label="Email"
@@ -60,7 +61,7 @@ export default function RegisterPage() {
 
           <Input
             type="password"
-            name="Password"
+            label="Password"
             {...register("password", { required: true, minLength: 8 })}
             error={errors.password}
           />
