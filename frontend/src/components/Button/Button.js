@@ -14,8 +14,6 @@ export default function Button({
     <div className={classes.container}>
       <button
         style={{
-          color,
-          backgroundColor,
           fontSize,
           width,
           height,
@@ -32,9 +30,7 @@ export default function Button({
 Button.defaultProps = {
   type: "button",
   text: "Submit",
-  backgroundColor: "rgb(120,120,120)",
-  color: "white",
-  fontSize: "1.3rem",
+  fontSize: "1.5rem",
   width: "12rem",
   height: "3.5rem",
 };

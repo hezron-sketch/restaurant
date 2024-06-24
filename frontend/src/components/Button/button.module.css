@@ -10,10 +10,13 @@
   border-radius: 1rem;
   width: 100%;
   margin: 1rem auto;
-  opacity: 0.7;
   font-weight: 600;
+  background-color: rgb(255, 151, 53);
+  color: rgb(255, 235, 217);
 }
 .container button:hover {
   cursor: pointer;
-  opacity: 1;
+  color: rgb(255, 123, 0);
+  background-color: rgb(255, 209, 166); 
 }
+
